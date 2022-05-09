@@ -34,12 +34,23 @@
             //bulb on
             let imgOb=document.getElementById('bulb');
             imgOb.setAttribute('src','images/light-bulb-on.png');
+
+            let buttonOb=document.getElementById('onOffButton');
+            let buttonText = buttonOb.innerHTML;
+            console.log(buttonText);
+            buttonOb.innerHTML='OFF';
         };
         //turn off
         const turnOff=()=>{
             //bulb off
             let imgOb=document.getElementById('bulb');
             imgOb.setAttribute("src","images/light-bulb-off.png");
+
+            let buttonOb=document.getElementById('onOffButton');
+            let buttonText = buttonOb.innerHTML;
+            console.log(buttonText);
+            buttonOb.innerHTML='ON';
+
         };
         //toggle button
         const toggleBulb=()=> {
